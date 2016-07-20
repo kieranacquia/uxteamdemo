@@ -1,5 +1,5 @@
 {
-    "name": "acquia/buildstepstutorial",
+    "name": "acquia/pipelinestutorial",
     "description": "secret tutorial directory",
     "minimum-stability": "dev",
     "version": "master",
