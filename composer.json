@@ -10,7 +10,7 @@
         }
     ],
     "dist": {
-        "url": "git@github.com:acquia/buildstepstutorial.git",
+        "url": "git@github.com:acquia/pipelinestutorial.git",
         "type": "git"
     }
 }
