@@ -1,8 +1,6 @@
 build-steps:
-  -
-    pipeline:
+  - build:
       type: script
       script:
-      # Run composer install to get access the private acquia buildstepstutorial repository with the secret.txt file
-        - 'composer --no-interaction --quiet install'
+        - echo "Hello, Pipelines!" > docroot/hello.txt
 
