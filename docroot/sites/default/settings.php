@@ -325,9 +325,6 @@ $settings['update_free_access'] = FALSE;
  *
  * You can also define an array of host names that can be accessed directly,
  * bypassing the proxy, in $settings['http_client_config']['proxy']['no'].
- *
- * If these settings are not configured, the system environment variables
- * HTTP_PROXY, HTTPS_PROXY, and NO_PROXY on the web server will be used instead.
  */
 # $settings['http_client_config']['proxy']['http'] = 'http://proxy_user:proxy_pass@example.com:8080';
 # $settings['http_client_config']['proxy']['https'] = 'http://proxy_user:proxy_pass@example.com:8080';
@@ -717,7 +714,5 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-
-if (file_exists('/var/www/site-php')) {
-  require '/var/www/site-php/dstol1/dstol1-settings.inc';
-}
+require('/var/www/site-php/pipelinestutorial/pipelinestutorial-settings.inc');
+$settings['install_profile'] = 'lightning';

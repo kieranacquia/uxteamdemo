@@ -1,1 +1,1 @@
-This directory contains commands, configuration and site aliases for Drush. See http://packages.drush.org/ for a directory of Drush commands installable via Composer.
+Project-specific Drush configuration, as well as custom and contributed Drush commands, should go in this directory.
