@@ -3,7 +3,11 @@ build-steps:
       type: script
       script:
         - composer install --no-progress
+        # Copy db configuration files to be set for Acquia Cloud
+        - cp docroot/sites/default/default.settings.php docroot/sites/default/settings.php
+        - cp docroot/sites/default/default.services.yml docroot/sites/default/services.yml
+        # Update the Acquia Cloud database configuration parameters in the config file
         - echo "require('/var/www/site-php/${PIPELINE_CLOUD_SITE}/${PIPELINE_CLOUD_SITE}-settings.inc');" >> docroot/sites/default/settings.php
         # See DPL-286
-        - echo '\$settings["install_profile"] = "";' >> docroot/sites/default/settings.php
+        - echo '$settings["install_profile"] = "";' >> docroot/sites/default/settings.php
 
