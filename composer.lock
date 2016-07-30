@@ -1,0 +1,49 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "49ba09cf45419f96fb5e5a882e1259bd",
+    "content-hash": "ebdf3532b144bdb9b65cf21787a66d19",
+    "packages": [
+        {
+            "name": "acquia/buildstepstutorial",
+            "version": "dev-pipelines401",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:acquia/pipelinestutorial.git",
+                "reference": "f77ced392ebdb4a4969c07c2a41457766d85b038"
+            },
+            "dist": {
+                "type": "git",
+                "url": "git@github.com:acquia/pipelinestutorial.git",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "kieranacquia",
+                    "email": "kieran@acquia.com"
+                }
+            ],
+            "description": "secret tutorial directory",
+            "support": {
+                "source": "https://github.com/acquia/pipelinestutorial/tree/pipelines401",
+                "issues": "https://github.com/acquia/pipelinestutorial/issues"
+            },
+            "time": "2016-07-20 23:15:02"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "acquia/buildstepstutorial": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
