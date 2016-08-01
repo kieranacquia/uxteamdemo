@@ -1,16 +1,14 @@
 {
-    "name": "acquia/pipelines401",
-    "description": "tutorial files for learning how to use pipelines",
-    "type": "project",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "acquia/buildstepstutorial": "dev-pipelines401"
-    },
-    "repositories": [
+    "name": "acquia/pipelinestutorial",
+    "description": "secret tutorial directory",
+    "authors": [
         {
-            "type": "vcs",
-            "url": "git@github.com:acquia/pipelinestutorial.git"
+            "name": "kieranacquia",
+            "email": "kieran@acquia.com"
         }
-    ]
+    ],
+    "dist": {
+        "url": "git@github.com:acquia/pipelinestutorial.git",
+        "type": "git"
+    }
 }
