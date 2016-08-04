@@ -2,12 +2,6 @@ build-steps:
   - build:
       type: script
       script:
+        # The composer create project files and settings.php db and profile configurations have been provided in the tutorial branch or release. We only need run composer.
         - composer install --no-progress
-        # Copy db configuration files to be set for Acquia Cloud
-        - cp docroot/sites/default/default.settings.php docroot/sites/default/settings.php
-        - cp docroot/sites/default/default.services.yml docroot/sites/default/services.yml
-        # Update the Acquia Cloud database configuration parameters in the config file
-        - echo "require('/var/www/site-php/${AH_SITE_GROUP}/${AH_SITE_GROUP}-settings.inc');" >> docroot/sites/default/settings.php
-        # See DPL-286
-        - echo '$settings["install_profile"] = "";' >> docroot/sites/default/settings.php
 
