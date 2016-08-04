@@ -1,5 +1,5 @@
-The purpose of the 201 tutorial is demonstrate the ability to build a Drupal site with Composer, with only the essential
-local files (e.g.: not the vendor directory) committed to the source branch.  To use it, copy the files from this branch
+This tutorial demonstrates the ability to build a Drupal site with Composer, with only the essential
+local files (e.g.: not the vendor directory) committed to the source branch.  It builds Acquia Lightning, based on the [Lightning Project](https://github.com/acquia/lightning-project). To use it, copy the files from this branch
 into your Acquia Cloud repository, then run pipeline start.
 
 Notes:
