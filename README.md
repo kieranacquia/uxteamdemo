@@ -1,7 +1,12 @@
-The purpose of the 201 tutorial is demonstrate the ability to build a Drupal site from a composer file.  We have already set-up this 
-repo to container the output from "composer create-project" and prepopulated settings.php with database configration and profile name.
+The purpose of the 201 tutorial is demonstrate the ability to build a Drupal site with Composer, with only the essential
+local files (e.g.: not the vendor directory) committed to the source branch.  To use it, copy the files from this branch
+into your Acquia Cloud repository, then run pipeline start.
 
-This repo is set-up exclusively for Acquia Cloud and can not be cloned into Dev Desktop due to a number of complex integration issues.  
-You can use this branch in live development and run composer install in live development.
+Notes:
 
-Checkout the files in this directory and copy them into your Acquia Cloud repository. Then run pipeline start.
+* We have already set up this branch to contain the output from "composer create-project" and prepopulated settings.php with database
+  configration and profile name.  Doing that set up from scratch will be the subject of a different tutorial.
+* This branch is set up exclusively for Acquia Cloud.  To do additional development on it, enable Live Development on an environment
+  running this branch, then run composer install in the livedev directory.
+* An environment running this cannot currently be cloned into Dev Desktop due to a number of complex integration issues.  
+
