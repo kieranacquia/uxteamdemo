@@ -714,5 +714,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-require("/var/www/site-php/$_ENV['AH_SITE_GROUP']/$_ENV['AH_SITE_GROUP']-settings.inc");
+# Database configuration line using Acquia Cloud Environment Variables
+require("/var/www/site-php/".$_ENV['AH_SITE_GROUP']."/".$_ENV['AH_SITE_GROUP']."-settings.inc");
+# Adding a work around to an integration issue involving Acquia Cloud, D8, and Install profiles to allow for installation
 $settings["install_profile"] = "";
