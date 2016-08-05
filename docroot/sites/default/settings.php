@@ -714,5 +714,5 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-require('/var/www/site-php/${AH_SITE_GROUP}/${AH_SITE_GROUP}-settings.inc');
+require("/var/www/site-php/$ENV{'AH_SITE_GROUP'}/$ENV{'AH_SITE_GROUP'}-settings.inc");
 $settings["install_profile"] = "";
