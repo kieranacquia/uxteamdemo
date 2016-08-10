@@ -1,7 +1,0 @@
-build-steps:
-  - build:
-      type: script
-      script:
-        # The composer create project files and settings.php db and profile configurations have been provided in the tutorial branch or release. We only need run composer.
-        - composer install --no-progress
-
