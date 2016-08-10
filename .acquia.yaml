@@ -2,4 +2,4 @@ build-steps:
   - build:
       type: script
       script:
-        - cat $secret 
+        -  $secret 
