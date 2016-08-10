@@ -5,4 +5,5 @@ events:
       - composer:
           type: script
           script:
-            - echo $secret
+            # Add an encrypted variable named secret to this file with pipelines client. Use pipeline help encrypt for example syntax.
+            - echo $secret > secret.txt
