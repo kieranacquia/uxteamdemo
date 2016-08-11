@@ -11,8 +11,9 @@ Notes:
 * An environment running this cannot currently be cloned into Dev Desktop due to a number of complex integration issues.  
  
 Installing lighting via drush:
-drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
-drush @<<pipelinesdemo>>.test ac-task-info 14726779
-drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
-drush @<<pipelinesdemo>>.test.livedev si
+
+* drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
+* drush @<<pipelinesdemo>>.test ac-task-info 14726779
+* drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
+* drush @<<pipelinesdemo>>.test.livedev si
 
