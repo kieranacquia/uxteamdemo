@@ -1,0 +1,9 @@
+version: 1.0.0
+events:
+  build:
+    steps:
+      - composer:
+          type: script
+          script:
+            - echo "Hello, Pipelines!" > hello.txt
+
