@@ -13,7 +13,7 @@ Notes:
 Installing lighting via drush:
 
 * drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
-* drush @<<pipelinesdemo>>.test ac-task-info 14726779
+* drush @<<pipelinesdemo>>.test ac-task-info <<14726779>>
 * drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
 * drush @<<pipelinesdemo>>.test.livedev si
 
