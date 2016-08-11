@@ -9,4 +9,10 @@ Notes:
 * This branch is set up exclusively for Acquia Cloud.  To do additional development on it, enable Live Development on an environment
   running this branch, then run composer install in the livedev directory.
 * An environment running this cannot currently be cloned into Dev Desktop due to a number of complex integration issues.  
+ 
+Installing lighting via drush:
+drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
+drush @<<pipelinesdemo>>.test ac-task-info 14726779
+drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
+drush @<<pipelinesdemo>>.test.livedev si
 
