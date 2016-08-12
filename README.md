@@ -1,5 +1,8 @@
 # Encrypting data in Pipelines YAML
 
+* [Download files](http://tutorials.pipeline-dev.services.acquia.io/pipelinestutorial401.zip)
+* [Watch video](https://drive.google.com/open?id=0BwBnqz3kkaPuZDFDZXI4S0c5OWc)
+
 This 401 tutorial shows you how to safely store encrypted data in the Pipelines YAML file so it will be accessible to your job.
 
 You will use the ```pipelines encrypt``` command and give it a variable name and value to be encrypted. The sample YAML file creates a file ```secret.txt``` in your build artifact containing the decrypted value.
