@@ -16,4 +16,6 @@ Installing lighting via drush:
 * drush @<<pipelinesdemo>>.test ac-task-info <<14726779>>
 * drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
 * drush @<<pipelinesdemo>>.test.livedev si
+* drush @pipelinesdemo.test.livedev ac-domain-list
 
+Take the username and password from the si command response and enter it at the domain provided by ac-domain-list
