@@ -1,3 +1,26 @@
-This 401 tutorial aims to help you encrypt a variable names secret using pipelines and then decrypt the variable and write it to secret.tx file in your build artifact.
+# Encrypting data in Pipelines YAML
 
-You will use pipelines help encrypt to see the example and then use that to add the encypted variable to the build manifest.
+This 401 tutorial shows you how to safely store encrypted data in the Pipelines YAML file so it will be accessible to your job.
+
+You will use the ```pipelines encrypt``` command and give it a variable name and value to be encrypted. The sample YAML file creates a file ```secret.txt``` in your build artifact containing the decrypted value.
+
+To get the files, clone this repository and checkout the pipelines401 branch, or you can [download the ZIP file here](http://tutorials.pipeline-dev.services.acquia.io/pipelinestutorial401.zip).
+
+The steps are:
+
+* Copy the files from this branch into your Cloud repository.
+* Use the ```pipelines encrypt``` command to add the SSH key to the
+acquia-pipelines.yml file:
+```
+  pipelines encrypt --add variables.global.secret
+```
+* Commit acquia-pipelines.yml and push it to your Cloud repository.
+```
+  git add acquia-pipelines.yml
+  git commit -m 'encrypted variable'
+  git push origin master
+```
+* Start a Pipelines job
+```
+   pipelines start
+```
