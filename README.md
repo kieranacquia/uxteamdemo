@@ -24,3 +24,9 @@ acquia-pipelines.yml file:
 ```
    pipelines start
 ```
+* When ```pipelines status``` shows the job is complete, checkout the master-build branch to see the secret.txt file:
+```
+   git fetch
+   git checkout master-build
+   cat secret.txt
+```
