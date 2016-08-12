@@ -1,6 +1,10 @@
+# Building Drupal with Composer
+
 This tutorial demonstrates the ability to build a Drupal site with Composer, with only the essential
 local files (e.g.: not the vendor directory) committed to the source branch.  It builds Acquia Lightning, based on the [Lightning Project](https://github.com/acquia/lightning-project). To use it, copy the files from this branch
-into your Acquia Cloud repository, then run pipeline start.
+into your Acquia Cloud repository, then run ```pipelines start```.
+
+To get the files, clone this repository and checkout the pipelines201 branch, or you can [download the ZIP file here](http://tutorials.pipeline-dev.services.acquia.io/pipelinestutorial201.zip).
 
 Notes:
 
@@ -10,7 +14,7 @@ Notes:
   running this branch, then run composer install in the livedev directory.
 * An environment running this cannot currently be cloned into Dev Desktop due to a number of complex integration issues.  
  
-Installing lighting via drush:
+After the Pipelines build is complete, you can install Lighting on Cloud via drush:
 
 * drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
 * drush @<<pipelinesdemo>>.test ac-task-info <<14726779>>
