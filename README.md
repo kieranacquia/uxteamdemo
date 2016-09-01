@@ -26,4 +26,4 @@ After the Pipelines build is complete, you can install Lighting on Cloud via dru
 * drush @<<pipelinesdemo>>.test.livedev site install
 * drush @<<pipelinesdemo>>.test.livedev ac-domain-list
 
-Take the username and password from the si command response and enter it at the domain provided by ac-domain-list
+Take the username and password from the site install command response and enter it at the domain provided by ac-domain-list
