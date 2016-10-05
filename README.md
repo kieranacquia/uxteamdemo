@@ -20,7 +20,7 @@ Notes:
  
 After the Pipelines build is complete, you can install Lighting on Cloud via drush:
 
-* drush @<<pipelinesdemo>>.test ac-code-path-deploy master-build
+* drush @<<pipelinesdemo>>.test ac-code-path-deploy pipelines-build-master
 * drush @<<pipelinesdemo>>.test ac-task-info <<14726779>>
 * drush @<<pipelinesdemo>>.test ac-environment-livedev enable 1
 * drush @<<pipelinesdemo>>.test.livedev site install
